@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Unike.View.HomeView"
+             NavigationPage.HasNavigationBar="False" BackgroundColor="White">
+    
+    <ContentPage.Resources>
+        <StyleSheet Source="/Assets/HomeStyle.css" />
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <StackLayout StyleClass="StclEntry">
+                <Image Source="logoUnike.jpg" />
+                <Image Source="logoServico.jpg" />
+            </StackLayout>
+
+            <StackLayout StyleClass="txtLabelHome">
+                <Label Text="Bien-venido ao App do Professional" FontAttributes="Bold" FontSize="22"/>
+                <Label Text="Receba e selecione os serviços que deseja,criando assim sua própria agenda." />
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Center">
+                <Button Text="Tenho uma conta" Clicked="btnAccess"/>
+                <Button Text="Não tenho uma conta! Criar agora" Clicked="btnCreate" BackgroundColor="White" TextColor="Black" FontSize="12"/>
+            </StackLayout>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

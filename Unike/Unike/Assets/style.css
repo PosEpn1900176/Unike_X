@@ -1,0 +1,47 @@
+﻿.StclLbl{
+    padding: 10;
+}
+
+.lblTitulo {
+    color: #000000;
+    font-size: medium;
+    font-family: Roboto;
+    font-weight: bold;
+    padding: 10;
+}
+
+.lblSubTitulo {
+    color: #000000;
+    font-size: small;
+    font-family: Roboto;
+}
+
+.StclEntry{
+    padding: 15;
+    margin-top: 5;
+}
+
+.txtLabelHome {
+    padding: 15;
+    margin-top: 5;
+}
+
+.plcEntry {
+    background-color: #ffffff;
+    font-size: small;
+    font-family: Roboto;
+}
+
+.StclBtn {
+    padding: 10;
+}
+
+button {
+    color: #ffffff;
+    background-color: #D42531;
+    width: 70;
+    height: 40;
+    font-size: small;
+    border-radius: 4;
+    padding: 10;
+}

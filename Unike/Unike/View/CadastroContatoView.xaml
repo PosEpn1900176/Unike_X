@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Unike.View.CadastroContatoView"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.Resources>
+        <StyleSheet Source="/Assets/HomeStyle.css" />
+    </ContentPage.Resources>
+            
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <StackLayout StyleClass="StclEntry">
+                <Label Text="Dados do Contato" FontAttributes="Bold" FontSize="24" TextColor="Black"/>
+                <Label Text="Vamos entrar em contato através dessas informações, escreva corretamente" FontAttributes="Bold" FontSize="14" TextColor="Black"/>
+            </StackLayout>
+
+            <StackLayout StyleClass="StclEntry">
+                <Entry Placeholder="E-MAIL" StyleClass="plcEntry"></Entry>
+                <Entry Placeholder="CELULAR (COM DDD)" StyleClass="plcEntry"></Entry>
+            </StackLayout>
+
+            <StackLayout StyleClass="StclEntry" Orientation="Horizontal">
+                <Button Text="Avançar" HorizontalOptions="Start"></Button>
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

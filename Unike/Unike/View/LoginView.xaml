@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Unike.View.LoginView" BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False" >
+    <ContentPage.Resources>
+        <StyleSheet Source="/Assets/style.css" />
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout>
+
+            <StackLayout StyleClass="StclEntry">
+                <Label Text="Bem-Vindo!" StyleClass="lblTitulo" />
+                <Label Text="Entre com sua conta." StyleClass="lblSubTitulo"/>
+            </StackLayout>
+
+            <StackLayout StyleClass="StclEntry">
+                <Entry Placeholder="E-MAIL" StyleClass="plcEntry"></Entry>
+                <Entry Placeholder="SENHA" StyleClass="plcEntry" IsPassword="True"></Entry>
+            </StackLayout>
+
+            <StackLayout StyleClass="StclEntry" Orientation="Horizontal">
+                <Button Text="Entrar" HorizontalOptions="Start"></Button>
+                <Label HorizontalOptions="EndAndExpand">
+                    <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Esquecei minha senha" TextColor="Black" FontSize="10">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ClickCommand}"
+                                                      CommandParameter="https://xamarin.com" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                    </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+
+            <StackLayout StyleClass="StclEntry">
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Ainda não tem conta? Entre aqui." TextColor="DarkRed" FontSize="12" FontAttributes="Bold">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ClickCommand}"
+                                                      CommandParameter="https://xamarin.com" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
